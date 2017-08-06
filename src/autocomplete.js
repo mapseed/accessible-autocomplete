@@ -168,7 +168,7 @@ export default class Autocomplete extends Component {
     this.setState({
       focused: null,
       menuOpen: newState.menuOpen || false,
-      query: newQuery,
+      query: options.indexOf(newQuery) >= 0 ? newQuery : "",
       selected: null
     })
   }
