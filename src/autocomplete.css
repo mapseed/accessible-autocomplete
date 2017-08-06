@@ -20,17 +20,11 @@
 }
 
 .autocomplete__hint {
-  color: #BFC1C3;
-  position: absolute;
+  display: none;
 }
 
 .autocomplete__input--default{
   padding: 4px;
-}
-
-.autocomplete__input--focused {
-  outline-offset: 0;
-  outline: 3px solid #ffbf47;
 }
 
 .autocomplete__input--show-all-values {
@@ -110,7 +104,7 @@
   background-color: #005EA5;
   border-color: #005EA5;
   color: white;
-  outline: none;
+  outline: 0;
 }
 
 .autocomplete__option--no-results {
@@ -120,22 +114,6 @@
 }
 
 .autocomplete__hint,
-.autocomplete__input,
-.autocomplete__option {
-  font-size: 16px;
-  line-height: 1.25;
-}
-
-.autocomplete__hint,
 .autocomplete__option {
   padding: 4px;
-}
-
-@media (min-width: 641px) {
-  .autocomplete__hint,
-  .autocomplete__input,
-  .autocomplete__option {
-    font-size: 19px;
-    line-height: 1.31579;
-  }
 }
